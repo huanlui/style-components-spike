@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Typography from '@material-ui/core/Typography';
 
 export const MessageLevel = {
     Error:"Error",
@@ -21,16 +22,16 @@ const Message = ({text,level}) => {
         }   
     };
 
-    const Caption = styled.h1`
+    const MessageTypography = styled(Typography)`
         background: ${getColor(level)};
         border: 0;
         border-radius: 3;
         box-shadow: '0 3px 5px 2px rgba(255, 105, 135, .3)';
-        color: 'purple';
-        padding: '0 30px';
-  `;
+        color: 'purple' !important; 
+        padding: '0 300px';
+`;
 
-    return <Caption>{text}</Caption>;
+    return <MessageTypography>{text}</MessageTypography>;
 };
 
 export default Message;
