@@ -8,7 +8,7 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Message text="Don't remember to refactor" level={MessageLevel.Error}></Message>
+        <Message text="Don't remember to refactor" level={MessageLevel.Warning}></Message>
       </header>
     </div>
   );
